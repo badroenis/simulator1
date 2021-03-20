@@ -1,5 +1,5 @@
 package sims;
-
+//import java.lang.Math;
 public class Simulator {
 
 	/*public int blockCount;
@@ -9,7 +9,7 @@ public class Simulator {
 	
 	//Represents the system memory
 	public MemoryBlock[] memory = new MemoryBlock[100];
-	//List of all pages
+	//Record of all pages
 	public int[] pages;
 	
 	public void simulate() {
@@ -34,9 +34,10 @@ public class Simulator {
 	}
 	
 	public static void main(String[] args) {
-		//Generate requests
-		//Don't attempt to allocate blocks that are already allocated,
-		//or free blocks that are currently free
+		/*Generate 10000 requests (test with 10-100 and upscale once it works)	
+		Don't attempt to allocate blocks that are already allocated,
+		or free blocks that are currently free*/
+		
 		//Run the allocate method
 		//Log/output memory allocations, track fragmentation
 	}

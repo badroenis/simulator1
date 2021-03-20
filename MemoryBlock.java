@@ -14,8 +14,13 @@ public class MemoryBlock {
 		allocated = false;
 		size = (int) (1 + 20 * Math.random());
 		//req, free = probablility 0 < p < 1
-		reqProb = Math.random();
-		freeProb = Math.random();	
+		if(Math.random() < 0.1) //Chance for some significantly smaller ones
+			reqProb = Math.random()/100;
+		else reqProb = Math.random();
+		//Free probs
+		if(Math.random() < 0.1)
+			freeProb = Math.random()/100;
+		else freeProb = Math.random();	
 	}
 }
 
